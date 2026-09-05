@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rooms</title>
+    <style>
+
+   html,body
+        {display: flex;
+         flex-direction: column;}
+         body{height: 100vh;}
+         main{flex: 1;}
+       
+         footer{margin-top: 5em;}
+       
+
+    a:hover{color: rgb(21, 205, 234);
+            font-family:cursive;}
+          a{color: black;}
+
+
+    h1{text-align: center;}
+    h3{font-family: cursive;
+    font-size: 1.5em;}
+
+        .deluxe
+           {display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+         button{font-size: 1.2em;}
+
+
+        .sarena 
+           {border: 4px solid rgb(0, 7, 8);
+            width: 300px;
+            border-radius: 1.3em;
+            box-shadow:0 5px 15px   black;
+            flex-basis: 250px;
+            font-size: larger;}  
+        .sarena:hover{border-color: aqua;}    
+        .sarena p{width: 300px;}    
+        .sarena img{border-radius: 1.2em;}
+        
+
+        .pearl
+            {border: 4px solid black;
+            width: 300px;
+            border-radius: 1.3em;
+            box-shadow:0 5px 15px   black;
+            flex-basis: 250px;
+            font-size: larger;}
+        .pearl:hover{border-color: aqua;}    
+        .pearl p{width: 300px;}        
+        .pearl img{border-radius: 1.2em;}
+
+
+        .royale_swiss
+            {border: 4px solid black;
+            width: 300px;
+            border-radius: 1.3em;
+            box-shadow:0 5px 15px   black;
+            flex-basis: 250px;
+            font-size: larger;}
+        .royale_swiss:hover{border-color: aqua;}    
+        .royale_swiss p{width: 300px;}    
+        .royale_swiss img{border-radius: 1.2em;}
+
+
+        .avari
+            {border: 4px solid black;
+            width: 300px;
+            border-radius: 1.3em;
+            box-shadow:0 5px 15px   black;
+            flex-basis: 300px;
+            font-size: larger;}
+        .avari:hover{border-color: aqua;}    
+        .avari p{width: 300px;}    
+        .avari img{border-radius: 1.2em;}
+    
+
+         .sarena,
+         .pearl,
+         .royale_swiss,
+         .avari:hover{transition: transform 0.3s ease;}
+
+         .sarena:hover,
+         .pearl:hover,
+         .royale_swiss:hover,
+         .avari:hover{transform: scale(1.05);}
+
+
+
+
+         
+        .executive{display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        margin-top: 5em;}
+      
+        .four-points{border: 4px solid black;
+            width: 300px;
+            border-radius: 1.3em;
+            box-shadow:0 5px 15px   black;
+            flex-basis: 300px;
+            font-size: larger;}
+        .four-points:hover{border-color: aqua;}    
+        .four-points p{width: 300px; ;}    
+        .four-points img{border-radius: 1.2em;}  
+    
+        
+        .luxus
+            {border: 4px solid black;
+            width: 300px;
+            border-radius: 1.3em;
+            box-shadow:0 5px 15px   black;
+            flex-basis: 300px;
+            font-size: larger;}
+        .luxus:hover{border-color: aqua;}    
+        .luxus p{width: 300px;}    
+        .luxus img{border-radius: 1.2em;}
+    
+         
+         .marriott
+            {border: 4px solid black;
+            width: 300px;
+            border-radius: 1.3em;
+            box-shadow:0 5px 15px   black;
+            flex-basis: 300px;
+            font-size: larger;}
+        .marriot t:hover{border-color: rgb(0, 255, 255);}    
+        .marriott p{width: 300px;}    
+        .marriott img{border-radius: 1.2em;}
+
+
+         
+         .movenpick
+            {border: 4px solid black;
+            width: 300px;
+            border-radius: 1.3em;
+            box-shadow:0 5px 15px   black;
+            flex-basis: 300px;
+            font-size: larger;}
+        .movenpick:hover{border-color: aqua;}    
+        .movenpick p{width: 300px;}    
+        .movenpick img{border-radius: 1.2em;}
+
+
+
+         .four-points,
+         .luxus,
+         .marriott,
+         .movenpick:hover{transition: transform 0.3s ease;}
+
+         .four-points:hover,
+         .luxus:hover,
+         .marriott:hover,
+         .movenpick:hover{transform: scale(1.05);}
+
+          
+          .nav{display: flex;
+               justify-content: space-between;
+               padding: 15px 50px;
+            border: 2px solid black;
+               border-radius: 30px;}
+        
+   .links{display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 gap: 90px;
+                width: 80vw;
+                font-size: 20px;
+                 ;}
+
+        .name{align-self:flex-start;
+              color:rgb(21, 205, 234);
+            font-family: cursive;
+            font-size: 30px;}
+        
+        
+
+        footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px; 
+    background:rgb(21, 205, 234) ;
+    color: white;
+    border-radius: 2em;
+}
+
+footer .links {
+    display: flex;
+    gap: 25px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{color: black;}
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+    <div class="nav">
+        <div class="name">Stay Finder</div>
+        <div class="links"><a href="index.html">Home</a>
+        <a href="rooms.html">rooms</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a></div>
+    </div>
+</nav>
+</header>
+<main>
+<br><br>
+<h3>Find Your Perfect Stay
+Comfortable rooms, beautiful spaces, and everything you need for a relaxing stay.</h3> <br>
+<h1>Delux rooms</h1>
+     <div class="deluxe">
+        <div class="sarena">
+            <img src="sarena hortel.jpg" alt="sarena hotel" height="300px" width="300px"> <br>
+          <p>
+            <h2>Sarena Hotel <br> ⭐⭐⭐⭐⭐</h2> 
+            <b>Location:</b>Khayaban-e-Suhrwardy, Sector G-5/1, Islamabad, 44000, Pakistan. <br>
+            <b>Price:150$</b> per night <br>
+            <button><a href="https://www.serenahotels.com/islamabad?srsltid=AfmBOooK55Dx-06H2agbXpAgkViOgpG3lsHwRwu7sOYPjK1zKRqJ8m06" target="_blank">View more</button></a>
+          </p>  
+    </div>
+    <div class="pearl"> 
+        <img src="pearl continent hotel.jpg" alt="pearl hotel" height="300px" width="300px"><br>
+        <p>
+            <h2>PC Hotel <br>⭐⭐⭐⭐⭐</h2> 
+            <b>Location:</b>Shahrah-e-Quaid-e-Azam (Mall Road), Lahore, Pakistan.<br>
+            <b>Price:90$</b>per night <br>
+            <button><a href="https://www.pchotels.com/booking" target="_blank">View more</button></a>
+        </p>
+    </div>
+    <div class="royale_swiss">
+      <img src="royale swis.jpg" alt="royale swiss" height="300px" width="300px"> <br>
+      <p>
+        <h2>Royale Swiss Hotel <br>⭐⭐⭐⭐⭐</h2>
+        <b>Location:</b> Near Allama Iqbal International Airport, Lahore, Pakistan. <br>
+        <b>Price:120$</b>per night<br>
+        <button>
+         <a href="https://bookings.booknowengine.com/bookings/availability?hotel_id=702&check_in=2026-08-14&check_out=2026-08-15&nights=1&adults=2&children=0&device=desktop&max_guests=2&roomtype=1726&rateplan=4256">View more</a>
+        </button>
+      </p>
+    </div>
+    <div class="avari">
+        <img src="avari hotel.jpeg" alt="avari" height="300px" width="300px">
+        <p>
+        <h2>Avari Hotel <br>⭐⭐⭐⭐⭐</h2>
+        <b>Location:</b> 242 Fatima Jinnah Road in Karachi Cantonment.
+        <br>
+        <b>Price:155$</b>per night
+        <br>
+        <button>
+            <a href="https://avari.com/avari-towers-karachi/">View more</a>
+        </button>
+        </p>
+    </div>    
+</div>
+
+ <h1>Executive rooms</h1>
+
+<div class="executive">
+   
+    
+    <div class="four-points">
+        <img src="four points.jpeg" alt="four-points" height="300px" width="300px">
+        <P>
+        <h2>Four points Hotel <br>⭐⭐⭐⭐ </h2>
+        <b>Location:</b>Lahore Zoo & Alhamra Art Gallery: 5-minute walk.
+        <br>
+        <b>Price:89$</b>per night
+        <br>
+        <button>
+            <a href="https://www.marriott.com/en-us/hotels/lhefp-four-points-lahore/overview/">View more</a>
+        </button>
+        </P>
+    </div>
+    <div class="luxus">
+       <img src="luxus grand.jpeg" alt="luxus" height="300px" width="300px">
+       <p>
+        <h2>Luxus Grand Hotel <br> ⭐⭐⭐⭐</h2>
+        <b>Location:</b>4 Egerton Road, near Aiwan-e-Iqbal, Lahore.
+        <br>
+        <b>Price:85$</b>per night
+        <br>
+        <button>
+            <a href="https://luxusgrandhotel.com">View more</a>
+        </button>
+        </P>
+    </div>
+    <div class="marriott">
+        <img src="marriott.jpeg" alt="marriott" height="300px" width="300px">
+    <p>
+        <h2>Marriott Hotel <br>⭐⭐⭐⭐ </h2>
+        <b>Location:</b>Roughly 25 miles (35-minute drive) from Islamabad International Airport.
+        <br>
+        <b>Price:80$</b>pe night
+        <br>
+        <button>
+            <a href="https://www.marriott.com/en-us/hotels/isbpk-islamabad-marriott-hotel/overview/">View more</a>
+        </button>
+    </p>
+    </div>
+    <div class="movenpick">
+        <img src="movenpick.jpeg" alt="movenpick" height="300px" width="300px">
+    <p>
+           <h2>movenpick Hotel <br>⭐⭐⭐⭐</h2>
+           <b>Location:</b>Tower C, 4 Jinnah Avenue, Sector F-8/4, Islamabad, Pakistan.
+           <br>
+           <b>Price:85$</b>per night
+           <br>
+           <button>
+            <a href="https://movenpick.accor.com/en/asia/pakistan/islamabad/movenpick-hotel-centaurus-islamabad.html">View more</a>
+           </button>
+    </p>
+
+    </div>
+</div>    
+      </main>
+       <footer>
+        <h3 style="font-family: cursive;">Stay Finder</h3>
+       
+    <div class="link">
+       <a href="home.html">Home</a>
+       <a href="rooms.html">Rooms</a>
+       <a href="about.html">About</a>
+       <a href="contact.html">Contact</a>
+    </div>
+      <p>© 2026 Stay Finder <br> All rights reseaved</p>
+    </footer>
+</body>
+</html>
